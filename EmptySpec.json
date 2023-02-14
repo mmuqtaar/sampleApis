@@ -1,0 +1,26 @@
+{
+   "swagger":"2.0",
+   "info":{
+      "description":"Public API.",
+      "version":"V1",
+      "title":"REST API",
+      "termsOfService":"Terms of service",
+      "contact":{
+         "name":"founders"
+      },
+      "license":{
+         
+      }
+   },
+   "host":"localhost:9100",
+   "basePath":"/",
+   "tags":[
+      {
+         "name":"APIsec.ai",
+         "description":"APIsec.ai"
+      }
+   ],
+   "paths":{
+
+   }
+}
