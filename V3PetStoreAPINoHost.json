@@ -18,8 +18,14 @@
     "url": "http://swagger.io"
   },
   "servers": [
-   {
+    {
       "url": "https://petstore3.swagger.io/api/v3"
+    },
+    {
+      "url": "https://api.example.com/v1"
+    },
+    {
+      "url": "https://sandbox-api.example.com:8443/v1"
     }
   ],
   "tags": [
