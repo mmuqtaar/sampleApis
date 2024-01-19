@@ -19,7 +19,7 @@
   },
   "servers": [
         {
-      "url": "https://petstore3.swagger.io/api/v3"
+      "url": ""
     },
     {
       "url": "https://api.example.com/v1"
