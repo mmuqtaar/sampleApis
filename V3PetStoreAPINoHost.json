@@ -20,9 +20,6 @@
   "servers": [
         {
       "url": ""
-    },
-    {
-      "url": "https://api.example.com/v1"
     }
   ],
   "tags": [
