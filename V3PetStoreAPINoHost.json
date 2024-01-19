@@ -18,7 +18,9 @@
     "url": "http://swagger.io"
   },
   "servers": [
- 
+     {
+      "url": ""
+    }
   ],
   "tags": [
     {
