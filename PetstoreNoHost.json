@@ -14,7 +14,7 @@
     }
   },
   "host": "",
-  "basePath": "/v2",
+  "basePath": "",
   "tags": [
     {
       "name": "pet",
