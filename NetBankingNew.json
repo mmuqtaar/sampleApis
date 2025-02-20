@@ -187,6 +187,98 @@
                 }
             }
         },
+        "/api/v1/users/enterprise-sign-up": {
+"post": {
+"tags": [
+"users-controller"
+],
+"summary": "enterpriseSignUp",
+"operationId": "enterpriseSignUpUsingPOST",
+"consumes": [
+"application/json"
+],
+"produces": [
+"*/*"
+],
+"parameters": [
+{
+"in": "body",
+"name": "users",
+"description": "users",
+"required": true,
+"schema": {
+"$ref": "#/definitions/Users"
+}
+}
+],
+"responses": {
+"200": {
+"description": "OK",
+"schema": {
+"$ref": "#/definitions/ResponseOfboolean"
+}
+},
+"201": {
+"description": "Created"
+},
+"401": {
+"description": "Unauthorized"
+},
+"403": {
+"description": "Forbidden"
+},
+"404": {
+"description": "Not Found"
+}
+}
+}
+},
+"/api/v1/users/personal-sign-up": {
+"post": {
+"tags": [
+"users-controller"
+],
+"summary": "personalSignUp",
+"operationId": "personalSignUpUsingPOST",
+"consumes": [
+"application/json"
+],
+"produces": [
+"*/*"
+],
+"parameters": [
+{
+"in": "body",
+"name": "users",
+"description": "users",
+"required": true,
+"schema": {
+"$ref": "#/definitions/Users"
+}
+}
+],
+"responses": {
+"200": {
+"description": "OK",
+"schema": {
+"$ref": "#/definitions/ResponseOfboolean"
+}
+},
+"201": {
+"description": "Created"
+},
+"401": {
+"description": "Unauthorized"
+},
+"403": {
+"description": "Forbidden"
+},
+"404": {
+"description": "Not Found"
+}
+}
+}
+},
         "/api/v1/bank-account/deposit-amount": {
             "put": {
                 "tags": [
