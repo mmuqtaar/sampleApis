@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "aee53da8-1fb4-40a1-91a3-5847141abd6b",
+		"name": "Activity-logs-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11622268"
+	},
+	"item": [
+		{
+			"name": "user-activity-logs Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKQVZBIHRlYW0vL211cXRhYXJAYXBpc2VjLmFpIiwic2NvcGVzIjoiUk9MRV9VU0VSLFJPTEVfUFJPSkVDVF9NQU5BR0VSLFJPTEVfQURNSU4sUk9MRV9FTlRFUlBSSVNFX0FETUlOIiwiaWF0IjoxNzI1ODc5Njc5LCJleHAiOjE3MjU5NjYwNzl9.C9xVij0eeb0pgUbuxZv0-a6I-WM0Ss6ETyaNqzOCZl4"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://developer.apisec.ai/api/v1/user-activity-logs",
+					"protocol": "https",
+					"host": [
+						"developer",
+						"apisec",
+						"ai"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user-activity-logs"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2024-09-03",
+							"description": "optinally filter by start date and end date. Start date should not beyond the last three months. ",
+							"disabled": true
+						},
+						{
+							"key": "endDate",
+							"value": "2024-09-13",
+							"description": "optinally filter by start date and end date. Start date should not beyond the last three months. ",
+							"disabled": true
+						},
+						{
+							"key": "activity",
+							"value": "CREATE",
+							"description": "The support enum are 'CREATE,UPDATE,DELETE,ARCHIVED,PROFILE_CREATE,PROFILE_UPDATE, PROFILE_DELETE,ENVIRONMENT_CREATE,ENVIRONMENT_UPDATE,ENVIRONMENT_DELETE,\nSCAN_TRIGGERED,ENVIRONMENT_AUTH_CREATE,ENVIRONMENT_AUTH_UPDATE,ENVIRONMENT_AUTH_DELETE,RELOAD_SPEC_TRIGGERED, GENERATE_PLAYBOOKS_TRIGGERED. PLAYBOOKS_DELETE_TRIGGERED'",
+							"disabled": true
+						},
+						{
+							"key": "satus",
+							"value": "Success",
+							"description": "The support enums 'Success','Failed'",
+							"disabled": true
+						},
+						{
+							"key": "projectId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "pageSize",
+							"value": "20",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "system-activity-logs Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKQVZBIHRlYW0vL211cXRhYXJAYXBpc2VjLmFpIiwic2NvcGVzIjoiUk9MRV9VU0VSLFJPTEVfUFJPSkVDVF9NQU5BR0VSLFJPTEVfQURNSU4sUk9MRV9FTlRFUlBSSVNFX0FETUlOIiwiaWF0IjoxNzIyNTk1Njg0LCJleHAiOjE3MjI2ODIwODR9.ewBF-nhKTKE8u9DAJ0mSi-5sKYApLydlim9cHFy1xcM"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://developer.apisec.ai/api/v1/system-activity-logs",
+					"protocol": "https",
+					"host": [
+						"developer",
+						"apisec",
+						"ai"
+					],
+					"path": [
+						"api",
+						"v1",
+						"system-activity-logs"
+					],
+					"query": [
+						{
+							"key": "projectId",
+							"value": "",
+							"description": "optionally filter by projectId. This parameter filters  the activity by its projectId in the query parameter ",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "Success",
+							"description": "optionally filter by status type 'Success', 'Failed'. This parameter filters by the status enum in the query parameter request with the API. for instance status = Success\"",
+							"disabled": true
+						},
+						{
+							"key": "activity",
+							"value": "GENERATE_PLAYBOOKS_IN_PROGRESS",
+							"description": "The supported enum are for this params 'RELOAD_SPEC_IN_PROGRESS,RELOAD_SPEC_COMPLETE,PROJECT,\nSCAN_IN_PROGRESS,SCAN_COMPLETE,PLAYBOOKS_DELETE_IN_PROGRESS, PLAYBOOKS_DELETE_COMPLETE,,\nGENERATE_PLAYBOOKS_IN_PROGRESS,GENERATE_PLAYBOOKS_COMPLETE'",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "pageSize",
+							"value": "20",
+							"disabled": true
+						},
+						{
+							"key": "startDate",
+							"value": "2024-08-30",
+							"description": "optinally filter by start date and end date. Start date should not beyond the last three months. ",
+							"disabled": true
+						},
+						{
+							"key": "endDate",
+							"value": "2024-09-02",
+							"description": "optinally filter by start date and end date. Start date should not beyond the last three months. ",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-activity-logs Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKQVZBIHRlYW0vL211cXRhYXJAYXBpc2VjLmFpIiwic2NvcGVzIjoiUk9MRV9VU0VSLFJPTEVfUFJPSkVDVF9NQU5BR0VSLFJPTEVfQURNSU4sUk9MRV9FTlRFUlBSSVNFX0FETUlOIiwiaWF0IjoxNzIyNTk1Njg0LCJleHAiOjE3MjI2ODIwODR9.ewBF-nhKTKE8u9DAJ0mSi-5sKYApLydlim9cHFy1xcM"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://developer.apisec.ai/api/v1/login-activity-logs",
+					"protocol": "https",
+					"host": [
+						"developer",
+						"apisec",
+						"ai"
+					],
+					"path": [
+						"api",
+						"v1",
+						"login-activity-logs"
+					],
+					"query": [
+						{
+							"key": "activity",
+							"value": "LOGIN",
+							"description": "The supported enum are 'LOGIN' or 'LOGOUT'",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "Failed",
+							"description": "The supported enum are 'Success' or 'Failed'",
+							"disabled": true
+						},
+						{
+							"key": "startDate",
+							"value": "2024-08-30",
+							"description": "Filter by start date and end date. Start date should not beyond the last three months. ",
+							"disabled": true
+						},
+						{
+							"key": "endDate",
+							"value": "2024-09-02",
+							"description": "Filter by start date and end date. Start date should not beyond the last three months. ",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "pageSize",
+							"value": "20",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
